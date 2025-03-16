@@ -46,7 +46,8 @@
                 text-decoration: none;
                 color:white;
                 font-size:30px;
-                font-weight: bold;
+               
+                
 
             }
             h1{
@@ -71,6 +72,7 @@
                 margin-left: 120px;
                 font-size:35px;
                 margin-bottom: 0px;
+                font-family: Arial, Helvetica, sans-serif;
                 
             }
             .parent2{
@@ -86,8 +88,71 @@
             border-radius: 20px;
         }  
            .parent3{
-             
+             margin-bottom: 60px;
            }
+           .item3 img{
+            height: 200px;
+            width:400px;
+           
+           }
+
+           .footer {
+            background-color:  rgb(60, 124, 197);
+            color: white;
+            padding: 20px 0;
+            padding-left: 250px;
+            height: 30vh;
+            
+ 
+            }
+            
+            .footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.footer .col1 {
+  flex-basis: 30%;
+  margin-bottom: 20px;
+}
+
+.footer h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+.footer a {
+  color:white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  
+}
+
+.footer a:hover {
+  color: whitesmoke;
+}
+
+
+
+.footer p {
+  font-size: 14px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
         </style>
     </head>
     <body>
@@ -104,7 +169,7 @@
         <div class="parent1">
             <div class="parent1-text">
             <center><h1>Welcome to Book Zone</h1>
-            <p>You can find out your book here</p>
+            <p>You can find out your books here</p>
             <a href="#"><button>Explore Here  <i class="fa fa-arrow-right"></i></button></a>
         </center>
             </div>
@@ -126,13 +191,49 @@
         <h2>Featured Brands</h2>
         <div class="parent3">
             <div class="item3">
-                <img src="brand1.png">
-                <img src="brand2.png">
-                <img src="brand3.png">
-                <img src="brand4.png">
-                <img src="brand5.png">
+                <img src="brand1.png" alt="brand1">
+                <img src="brand2.png" alt="brand2">
+                <img src="brand3.png" alt="brand3">
+                <img src="brand4.png" alt="brand4">
+                <img src="brand5.png" alt="brand5">
 
             </div>
         </div>
+        <!--footer-->
+        <footer class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="col1">
+                  <h4>About Us</h4>
+                 
+                  <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col1">
+                  <h4>Help & Support</h4>
+                  <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                  </ul>
+                </div>
+                <div class="col1">
+                  <h4>Follow Us</h4>
+                  <ul>
+                    <li><a href="#" ><i class="fa fa-facebook"></i> </a></li>
+                    <li><a href="#" ><i class="fa fa-twitter"></i> </a></li>
+                    <li><a href="#" ><i class="fa fa-instagram"></i> </a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <p>&copy; 2025 ebook Inc. All rights reserved.</p>
+            </div>
+          </footer>
+          
+        
     </body>
 </html>
