@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                margin:0;
+                padding: 0;
+                font-family: 'Source Sans Pro', sans-serif;
+                
+
+            }
+            .parent{
+                background-color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 0;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 999;
+                height: 69px;
+
+            }
+            .left-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-left: 35px;
+            
+        }
+
+            .item1{
+                width:40px;
+                height:40px;
+                border-radius: 100%;
+              
+                align-items: center;
+                
+            }
+            .item2{
+                
+                display: flex;
+                gap:60px;
+                font-size: 29px;
+                margin-right: 70px;
+                align-items: center;
+                
+            }
+            a{
+                text-decoration: none;
+                color:black;
+                font-weight: bold;
+        
+                font-size: 16px;
+            }
+            .parent2{
+                background-image: url("portfolio.png");
+                background-size: cover;
+                color: white;
+                text-align: center;
+                align-items: center;
+                background-position: center;
+                height: 600px;
+                padding: 100px 20px;
+                height:700px;
+
+
+            }
+            .parent2 h1{
+                font-weight: 700;
+               font-size: 60px;
+               letter-spacing: 1px;
+                margin-bottom: 20px;
+                padding-top: 120px;
+            }
+            .parent2 p{
+                padding-top: 22px;
+                font-size:18px;
+                margin-bottom: 70px;
+                color:white;
+                font-weight: bold;
+                
+            }
+        .button{
+            background-color: white;
+            box-shadow: inset;
+            padding: 15px 50px;
+            border-radius: 5px;
+           transition: background 0.3s;
+           font-weight: bold;
+          
+        }
+        .social-icons {
+    position: absolute;
+    top: 35%;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    font-size: 150px;
+    
+    z-index: 1000;
+  }
+  
+  .social-icons a {
+    display: flex;
+    width: 52px;
+    height: 57px;
+    border: 1px solid white;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 24px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    background-color: black;
+    
+  }
+  
+  .item3{
+    font-size: 36px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-align: center;
+  }
+ .container {
+      max-width: 1200px;
+      margin: 50px auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+     
+    }
+    .about, .skills {
+      width: 48%;
+    }
+    h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .about,p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #555;
+    }
+    .about,p strong {
+      color: #333;
+    }
+    .contact-btn {
+     display: inline-block;
+    margin-top: 0px;
+    background-color: #0056D2;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill {
+      background-color: #e8e8e8;
+      padding: 10px 18px;
+      border-radius: 6px;
+      color: #555;
+      font-weight: 500;
+    }
+    .aboutme{
+        background: #fafafa;
+         padding : 60px 40px;
+    }
+
+    .projects-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .projects-section h2 {
+      font-size: 36px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .underline {
+      width: 40px;
+      height: 4px;
+      background-color: #005eb8;
+      margin: 10px auto 30px;
+      border-radius: 2px;
+    }
+
+    .projects-section p.project-text {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 60px;
+    }
+
+    .project-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 80px;
+    }
+
+    .project-image {
+      flex: 1 1 400px;
+    }
+
+    .project-image img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+    }
+
+    .project-content {
+      flex: 1 1 400px;
+      text-align: left;
+    }
+
+    .project-content h3 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .project-content p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .case-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 28px;
+      background-color: #005eb8;
+      color: white;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      border-radius: 6px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+    .contact-section{
+        background-image: url("portfolio.png");
+        padding-top:50px;
+        padding-bottom:90px
+    }
+
+
+.contact-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: #333;
+
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+
+}
+
+.underline-contact {
+  width: 40px;
+  height: 4px;
+  background-color: white;
+  margin: 10px auto 30px;
+  border-radius: 2px;
+}
+
+.contact-text {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color:white;
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin: 15px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  font-size: 16px;
+  border: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 14px 28px;
+  background-color: #005eb8;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #004a99;
+}
+
+footer {
+  background-color: #fff;
+  color: #333; 
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #005eb8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer hr {
+  border-top: 1px solid #ccc;
+  margin: 20px auto;
+  width: 80%;
+}
+
+footer .social i {
+  margin: 0 10px;
+  color: #333;
+  font-size: 20px;
+}
+
+footer .social i:hover {
+  color: #005eb8;
+}
+
+        </style>
+
+    </head>
+    <body>
+        <div class="parent">
+            <div class="left-section">
+                <img src="tharun.jpg" class="item1">
+                <h3>THARUN</h3>
+            </div>
+            <div class="item2">
+                <a href="#">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#projects">PROJECTS</a>         
+                <a href="#contacts">CONTACT</a>   
+
+            </div>
+
+        </div>
+        <div class="parent2">
+            <h1>HEY, MY NAME IS THARUN KUMAR</h1>
+            <p>Computer Science Student | Building cool things with code</p>
+            <a href="#projects" class="button">PROJECTS</a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/tharun-kumar16" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/tharunkumar16" target="_blank" ><i class="fab fa-github"></i></a>
+                <a href="https://x.com/TharunKumar169" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube" ></i></a>
+                <a href="https://www.instagram.com/tharunkumar_16/" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+        
+        </div>
+          <div class="aboutme" id="about">
+            <h1 class="item3">ABOUT ME</h1>
+             <div class="underline"></div>
+
+     <div class="container">
+    <div class="about">
+      <h2>Get to know me!</h2>
+      <p> Hey! My name is <strong>Tharun Kumar</strong>, and I'm an aspiring <strong>Front-end Developer</strong> based in Hyderabad. 
+         I'm passionate about building clean, responsive, and user-friendly web interfaces.<br><br>As a fresher, I've worked on several personal and academic projects to strengthen my skills in HTML, CSS, JavaScript, and modern frameworks like React. 
+       I'm eager to learn, grow, and contribute to real-world development teams. Feel free to <strong>contact</strong> me here.
+      </p>
+      <a href="#contacts" class="contact-btn">CONTACT</a>
+    </div>
+
+    <div class="skills">
+      <h2>My Skills</h2>
+      <div class="skills-list">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+         <div class="skill">Java</div>
+        <div class="skill">GIT</div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+     <section class="projects-section" id="projects">
+        <h2>PROJECTS</h2>
+        <div class="underline"></div>
+        <div class="project-text">
+            <p>Here are some of the projects I've worked on, demonstrating my approach to solving real-world problems through code</p>
+        </div>
+         <div class="project-item">
+    <div class="project-image">
+      <img src="laptop.png" alt="Project 1">
+    </div>
+    <div class="project-content">
+      <h3>Shopping Mall Management system</h3>
+      <p>
+        The project aims to provide a user-friendly interface for mall administrators to manage various aspects of the mall, including Store management: adding, updating, and deleting store informationCustomer management: managing customer details and transactions
+      </p>
+      <a href="#" class="case-button">CASE STUDY</a>
+    </div>
+  </div>
+
+  <div class="project-item">
+    <div class="project-image">
+      <img src="laptop.png" alt="Project 2">
+    </div>
+    <div class="project-content">
+      <h3>Early Detection of Cardiac Arrest in Newborns</h3>
+      <p>
+        Designed and developed a machine learning-based system to enable early detection of cardiac arrest in newborns, aiming to significantly reduce mortality and morbidity rates in the Cardiac Intensive CareUnit (CICU).
+      </p>
+      <a href="#" class="case-button">CASE STUDY</a>
+    </div>
+  </div>
+
+   <div class="project-item">
+    <div class="project-image">
+      <img src="laptop.png" alt="Project 3">
+    </div>
+    <div class="project-content">
+      <h3>Fraud Detection in Financial and Healthcare Sectors</h3>
+      <p>
+        Developed and implemented a fraud detection system using data mining techniques to enhance fraud detection within the financial and healthcare sectors.Integrated artificial intelligence, machine learning, and statistical analysis for the identification of fraudulent claims, minimizing financial losses.
+      </p>
+      <a href="#" class="case-button">CASE STUDY</a>
+    </div>
+  </div>
+   
+  
+     </section>
+
+     <section class="contact-section" id="contacts">
+        <h2>CONTACT</h2>
+    <div class="underline-contact"></div>
+    <p class="contact-text">
+      Feel free to reach out for collaborations, questions, or just to say hello. I’ll get back to you as soon as possible.
+    </p>
+  <div class="contact-container">
+    
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Enter Your Message" required></textarea>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div>
+      <h3>THARUN KUMAR</h3>
+      <p>Aspiring Computer Science Student | Passionate about building smart and scalable digital solutions.</p>
+    </div>
+    <div class="social">
+      <h3>SOCIAL</h3>
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-github"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-youtube"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+  </div>
+  <hr>
+  <p>© Copyright 2025. Made by <a href="#">Tharun kumar</a></p>
+</footer>
+
+
+        
+             
+
+            
+      
+        
+    
+
+
+
+    </body>
+</html>
