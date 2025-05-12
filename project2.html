@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                margin:0;
+                padding: 0;
+                font-family: 'Source Sans Pro', sans-serif;
+                
+
+            }
+            .parent{
+                background-color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 0;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 999;
+                height: 69px;
+
+            }
+            .left-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-left: 35px;
+            
+        }
+
+            .item1{
+                width:40px;
+                height:40px;
+                border-radius: 100%;
+              
+                align-items: center;
+                
+            }
+            .item2{
+                
+                display: flex;
+                gap:60px;
+                font-size: 29px;
+                margin-right: 70px;
+                align-items: center;
+                
+            }
+            a{
+                text-decoration: none;
+                color:black;
+                font-weight: bold;
+        
+                font-size: 16px;
+            }
+            .parent2{
+                background-image: url("portfolio.png");
+                background-size: cover;
+                color: white;
+                text-align: center;
+                align-items: center;
+                background-position: center;
+                height: 600px;
+                padding: 100px 20px;
+                height:700px;
+
+
+            }
+            .parent2 h1{
+                font-weight: 700;
+               font-size: 60px;
+               letter-spacing: 1px;
+                margin-bottom: 20px;
+                padding-top: 120px;
+            }
+            .parent2 p{
+                padding-top: 22px;
+                font-size:18px;
+                margin-bottom: 70px;
+                color:white;
+                font-weight: bold;
+                
+            }
+        .button{
+            background-color: white;
+            box-shadow: inset;
+            padding: 15px 50px;
+            border-radius: 5px;
+           transition: background 0.3s;
+           font-weight: bold;
+          
+        }
+  .image{
+    margin-top:60px;
+    text-align: center;
+  }
+        .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+       background: #fdfdfd;
+       padding-top: 30px;
+       
+      background: #fdfdfd;
+      color: #333;
+    }
+
+    .container h1 {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .overview p {
+      font-size: 1.1em;
+      line-height: 1.8em;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    .tools {
+      margin-top: 40px;
+    }
+
+    .tools h2 {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .tool-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .language {
+      background-color: #f1f1f1;
+      border-radius: 6px;
+      padding: 10px 20px;
+      font-size: 1em;
+      color: #333;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: background-color 0.3s;
+    }
+
+    .language:hover {
+      background-color: #e0e0e0;
+    }
+
+    footer {
+  background-color: #fff;
+  color: #333; 
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #005eb8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer hr {
+  border-top: 1px solid #ccc;
+  margin: 20px auto;
+  width: 80%;
+}
+
+footer .social i {
+  margin: 0 10px;
+  color: #333;
+  font-size: 20px;
+}
+
+footer .social i:hover {
+  color: #005eb8;
+}
+.item2 a:hover{
+    color:#005eb8;
+}
+        </style>
+   
+    </head>
+    <body>
+        <div class="parent">
+            <div class="left-section">
+                <img src="tharun.jpg" class="item1">
+                <h3>THARUN</h3>
+            </div>
+            <div class="item2">
+                <a href="index.html#home">HOME</a>
+                <a href="index.html#about">ABOUT</a>
+                <a href="index.html#projects">PROJECTS</a>         
+                <a href="index.html#contacts">CONTACT</a>   
+
+            </div>
+
+        </div>
+        <div class="parent2">
+            <h1>EARLY DETECTION OF CARDIAC ARREST IN NEWBORNS</h1>
+            <p>Designed and developed a machine learning-based system to enable early detection of cardiac arrest in newborns</p>
+            <a href="#livelink" class="button">LIVE LINK</a>
+        </div>
+
+        <div class="image">
+            <img src="project2.png" width="700" height="400">
+        </div>
+
+        <div class="container">
+    <h1>Project Overview</h1>
+    <div class="overview">
+      <p>Designed and developed a machine learning-based system to enable early detection of cardiac arrest in
+newborns, aiming to significantly reduce mortality and morbidity rates in the Cardiac Intensive Care
+Unit (CICU). Focused on identifying critical risk factors and subtle vital sign changes (heart rate, respiratory rate, oxygen saturation) that are often difficult to detect through traditional methods. Implemented statistical models including Logistic Regression, Support Vector Machines (SVM), and
+Artificial Neural Networks (ANNs) to predict the likelihood of cardiac arrest based on newborns' medical histories and physiological parameters. Developed predictive models that could detect cardiac arrest indicators up to eight hours earlier than
+conventional clinical detection methods. Analyzed large datasets of patient vitals and historical medical records using machine learning
+algorithms, enabling real-time risk identification and personalized care recommendations</p>
+      
+    </div>
+
+    <div class="tools">
+      <h2>Tools Used</h2>
+      <div class="tool-list">
+        <div class="language">HTML</div>
+        <div class="language">CSS</div>
+        <div class="language">MYSQL</div>
+        <div class="language">PYTHON</div>
+        <div class="language">DJANGO</div>
+        
+
+  
+      </div>
+    </div>
+  </div>
+
+  <footer>
+  <div class="footer-content">
+    <div>
+      <h3>THARUN KUMAR</h3>
+      <p>Aspiring Computer Science Student | Passionate about building smart and scalable digital solutions.</p>
+    </div>
+    <div class="social">
+      <h3>SOCIAL</h3>
+        <a href="https://www.linkedin.com/in/tharun-kumar16" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/tharunkumar16" target="_blank" ><i class="fab fa-github"></i></a>
+                <a href="https://x.com/TharunKumar169" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube" ></i></a>
+                <a href="https://www.instagram.com/tharunkumar_16/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <hr>
+  <p>© Copyright 2025. Made by <a href="#">Tharun kumar</a></p>
+</footer>
+    </body>
+</html>
